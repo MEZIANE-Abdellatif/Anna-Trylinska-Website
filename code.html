@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anna Trylińska | Immigration Law Poland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'sourceSerifFour';
+            src: url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+        }
+        @font-face {
+            font-family: 'workSans';
+            src: url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        }
+        body {
+            font-family: 'workSans', sans-serif;
+            background-color: #f9f9ff;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blue-overlay {
+            background: linear-gradient(rgba(43, 108, 176, 0.8), rgba(43, 108, 176, 0.8));
+        }
+        .card-shadow {
+            box-shadow: 0px 10px 30px rgba(43, 108, 176, 0.08);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed-dim": "#a6c8ff",
+                      "surface-container-highest": "#d9e3f9",
+                      "on-secondary-fixed": "#001c3b",
+                      "tertiary-fixed": "#d8e4eb",
+                      "surface-bright": "#f9f9ff",
+                      "on-primary-fixed": "#001c38",
+                      "primary-fixed-dim": "#a2c9ff",
+                      "on-secondary-container": "#004585",
+                      "surface-variant": "#d9e3f9",
+                      "link-blue": "#13639E",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#e1ecff",
+                      "secondary-fixed": "#d5e3ff",
+                      "on-tertiary-fixed": "#111d22",
+                      "inverse-surface": "#273141",
+                      "error-container": "#ffdad6",
+                      "tertiary-container": "#5f6c72",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#1960a3",
+                      "primary-container": "#2b6cb0",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#bcc8cf",
+                      "surface-container": "#e7eeff",
+                      "outline": "#727782",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "background-white": "#FFFFFF",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#3c494e",
+                      "outline-variant": "#c1c7d2",
+                      "primary-fixed": "#d3e4ff",
+                      "surface-dim": "#d0daf0",
+                      "deep-navy": "#00447C",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#dee8ff",
+                      "surface-container-low": "#f0f3ff",
+                      "on-tertiary-container": "#e0edf4",
+                      "on-surface": "#121c2c",
+                      "secondary-container": "#85b5fd",
+                      "primary": "#005394",
+                      "on-primary-fixed-variant": "#004881",
+                      "inverse-primary": "#a2c9ff",
+                      "on-background": "#121c2c",
+                      "tertiary": "#475459",
+                      "surface": "#f9f9ff",
+                      "on-secondary-fixed-variant": "#004787",
+                      "secondary": "#295fa1",
+                      "inverse-on-surface": "#ebf1ff",
+                      "on-surface-variant": "#414750",
+                      "background": "#f9f9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "section-padding-desktop": "80px",
+                      "section-padding-mobile": "40px"
+              },
+              "fontFamily": {
+                      "headline-xl-mobile": ["sourceSerifFour"],
+                      "body-lg": ["workSans"],
+                      "caption": ["workSans"],
+                      "label-md": ["workSans"],
+                      "headline-md": ["sourceSerifFour"],
+                      "headline-lg": ["sourceSerifFour"],
+                      "body-md": ["workSans"],
+                      "headline-xl": ["sourceSerifFour"]
+              },
+              "fontSize": {
+                      "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm h-20">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-gutter h-full">
+<div class="font-headline-md text-headline-md font-bold text-secondary">Anna Trylińska</div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about">About</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#team">Team</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#pricing">Pricing</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#blog">Blog</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a></li>
+<li><button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md hover:brightness-110 active:scale-95 transition-all">Book a Consultation</button></li>
+</ul>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-padding-mobile md:py-section-padding-desktop flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-8">
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary-container leading-tight">Your Legal Guide to Life in Poland</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Expert immigration assistance tailored to your personal and professional journey. We simplify complex procedures so you can focus on building your future.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-md hover:brightness-110 transition-all card-shadow">Book a Consultation</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-label-md hover:bg-primary/5 transition-all">See Our Services</button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square rounded-2xl overflow-hidden blue-overlay relative">
+<img class="w-full h-full object-cover mix-blend-overlay grayscale opacity-50" data-alt="A professional portrait of a confident female lawyer in a modern Warsaw office setting. She is wearing a sharp charcoal suit and smiling warmly toward the camera. The background is softly blurred, showing hints of contemporary architecture and warm interior lighting. The overall color palette is dominated by professional blues and clean whites, reflecting a corporate yet approachable brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWQCulHXvT8eGjEdB76BQixUd-dKlGHVCa2aouYNlm-nFG-zkVQkzvpRFNiQy8bpYPusHGk-cvTcFJ803-4Hu6c1YGc_dIrFOsj99mX9jDZbdIRRp0q7wONlgvgrCbt2eqdG-DRwJMOwCofEfMnDEiC0R6Jgxo-08OfQ3f6cmu_S6pYZweoP1eyv68youqtmp1crYLbdQ7z3ueMvhAlwZYQc9jSnOu5TA8arlhfpvTMn9ZYJKT5R5S6qltYFzPcBNPuBP9Q8ImjDs"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl card-shadow border border-outline-variant/30 hidden md:block">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="font-label-md text-primary">Certified Expert in Polish Law</span>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">How It Works</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto">Three simple steps to legal residency and peace of mind.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center group">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 card-shadow group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">event_available</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">1. Book</h3>
+<p class="font-body-md text-on-surface-variant">Schedule a session to discuss your case details and options.</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 card-shadow group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">fact_check</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">2. Review</h3>
+<p class="font-body-md text-on-surface-variant">We analyze your documents and prepare a robust legal strategy.</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 card-shadow group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">3. Represent</h3>
+<p class="font-body-md text-on-surface-variant">We handle all communications with the authorities for you.</p>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Specialized Immigration Services</h2>
+<p class="font-body-md text-on-surface-variant mt-2">Comprehensive legal support for every stage of your life in Poland.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Service Cards -->
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">family_restroom</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Family Reunification</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Bringing your loved ones to Poland under stable legal conditions.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">work</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Work Residence</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Securing your right to work and live legally for your career goals.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">stars</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">EU Blue Card</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Specialized permits for high-skilled professionals across the EU.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">business_center</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Business Immigration</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Helping entrepreneurs establish and grow their ventures in Poland.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">school</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Student &amp; PhD</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Legal support for researchers and students at all levels of education.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Permanent Residency</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Securing your long-term future with stable permanent status.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">public</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Citizenship</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Navigating the path to becoming a full citizen of Poland.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">gavel</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Deportation Defense</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Urgent legal protection and representation in deportation cases.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">shield</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">International Protection</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Assistance with asylum and international refugee status claims.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 block">more_horiz</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">PESEL / Other</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Essential administrative tasks and various legal permits.</p>
+</div>
+<a class="text-link-blue font-label-md mt-4 flex items-center gap-1 hover:underline" href="#">Learn more <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Anna -->
+<section class="bg-tertiary-container/5 py-section-padding-mobile md:py-section-padding-desktop" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 w-full relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden blue-overlay">
+<img class="w-full h-full object-cover mix-blend-overlay grayscale opacity-50" data-alt="A portrait of Anna Trylińska sitting in her bright, minimalist law office in Warsaw. She is looking at a legal document with a focused yet empathetic expression. The light streaming through the large windows highlights the crisp lines of the modern furniture and the sophisticated blue-tinted atmosphere of the space. Her professional demeanor is captured in a high-key, bright light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLFMXjCndC9Ck_d5Q6BOzLvAvFpJ_T2mTxnK9_uPUyCjTCjITTVdQT0QlUkJXBrOGN-L3xF9GAeCr5rx_C0lT92f5WB2Bn1yzGjaG7M66j6vegEv5zpayd7og8c5C-jQB8a4qbFUqu4gaCyiOjaL1lEitCOLUQFQKNiR83dbkuEafJLUUPBxNJS5STiH8o-I8CDQL_zt3PU7K7KfP0S1Hqu4g-aNimsVK6s-AgnD4JtgWYOArRFDP-_IGA2u4yVmMlhb7nCUcgvZ8"/>
+</div>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-6">About Anna Trylińska</h2>
+<p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        With a Master's degree in Human Rights, I have dedicated my career to navigating the complexities of immigration law. My academic journey through the University of Wrocław and the Louvain Academy has provided a deep theoretical foundation for my practical expertise.
+                    </p>
+<p class="font-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        I am honored to have been recognized as a US State Department Scholar, a distinction that reflects my commitment to international legal standards and humanitarian values.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="flex flex-col items-center p-4 bg-white rounded-xl card-shadow text-center">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">school</span>
+<span class="font-label-md text-xs">University of Wrocław</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-xl card-shadow text-center">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">history_edu</span>
+<span class="font-label-md text-xs">Louvain Academy</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-xl card-shadow text-center">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">workspace_premium</span>
+<span class="font-label-md text-xs">US State Dept Scholar</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop" id="team">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Meet the Team</h2>
+<p class="font-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto">Our multilingual team brings decades of combined experience to your service, fluent in Polish, English, Ukrainian, and Russian.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="bg-white p-8 rounded-3xl border border-outline-variant/30 card-shadow flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-secondary-container mb-6 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of Anna Trylińska, the principal lawyer, against a clean white background. Her look is professional and welcoming, with a soft blue aesthetic consistent with the brand's visual identity. The lighting is even and bright, highlighting her expertise and approachable personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARcSfr4WrZvJEFICDKwoPHJSD_j8HYkAPDSAr4AcpFX4bXU96hwmEKhaj9fvrHiyDm363-WLswO9s3bYemQfC3gTU3boeQ5IP60LSnKgHq4gtkP2C9CLrVBrmjuxljWM2Ys3h8-zqYfYrCeWO3r4eiO95u3zf6rZR3J6rd9rORDfEGox8PLH9lOIKJYb_UvNXP7KNPkchoBHrSxITjCvZFkluJdVezZR15Z6ZrpCLcRlCHqt_Q0TDtEtC4crCDaDkNdfVyBjZUjYM"/>
+</div>
+<h3 class="font-headline-md text-headline-md">Anna Trylińska</h3>
+<p class="font-label-md text-primary mb-4">Founder &amp; Lead Attorney</p>
+<p class="font-body-md text-on-surface-variant">Expert in complex residence and citizenship cases with a focus on human rights.</p>
+</div>
+<div class="bg-white p-8 rounded-3xl border border-outline-variant/30 card-shadow flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-secondary-container mb-6 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of Joanna Trylińska, a senior legal expert with over 30 years of experience. She has a distinguished and authoritative presence, set against a soft, professionally lit background. The image maintains the blue-tinted corporate aesthetic of the law practice, conveying trust and extensive legal knowledge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk8GIOSSBaL94EZ3AlFMm_fqrszTTBq7MQMZUHKR3meZVe0OEbaGB8G_85yDahZo5UP24dmYzv0TFC7LDJvWVMU5-M2fYx1p4VjUVp-c8kGxS93JodzYEsa5yfdCCX7wKthkslf6N4vtx00dJIXAj4B_LGSi2VnyfMq4Dt1pL0z102QrsD9B5tzZXJruIuMrNoYInQP0W0eXCzqH4C3V2bgUhroTV-13cictBnkw5EpVLMmMnVSNvK_ftcJuG2_o7kOgjJ8gLTPSQ"/>
+</div>
+<h3 class="font-headline-md text-headline-md">Joanna Trylińska</h3>
+<p class="font-label-md text-primary mb-4">Senior Legal Consultant</p>
+<p class="font-body-md text-on-surface-variant">Over 30 years of legal experience in Polish administrative and civil law.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop" id="pricing">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Transparent Pricing — No Surprises</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">We provide clear fee structures and instalment plans to make legal support accessible. Note: All prices are subject to 23% VAT.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pricing Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-shadow flex flex-col">
+<h3 class="font-label-md text-secondary mb-2 uppercase">Consultation</h3>
+<div class="text-3xl font-bold mb-4">489 PLN</div>
+<ul class="font-body-md text-on-surface-variant space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> 60-min in-depth session</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Case analysis &amp; roadmap</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Document checklist</li>
+</ul>
+<button class="w-full py-3 bg-primary text-on-primary rounded-xl font-label-md hover:brightness-110">Book Now</button>
+</div>
+<!-- Pricing Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-primary/40 card-shadow flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-white text-[10px] px-3 py-1 font-bold rounded-bl-lg">POPULAR</div>
+<h3 class="font-label-md text-secondary mb-2 uppercase">Temporary Residence</h3>
+<div class="text-3xl font-bold mb-4">from 2800 PLN</div>
+<ul class="font-body-md text-on-surface-variant space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Full case preparation</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Office of Voivode visits</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Unlimited consultations</li>
+</ul>
+<button class="w-full py-3 bg-secondary text-on-secondary rounded-xl font-label-md hover:brightness-110">Get Started</button>
+</div>
+<!-- Pricing Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-shadow flex flex-col">
+<h3 class="font-label-md text-secondary mb-2 uppercase">Citizenship</h3>
+<div class="text-3xl font-bold mb-4">6500-7000 PLN</div>
+<ul class="font-body-md text-on-surface-variant space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Grant of citizenship</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Confirmation of status</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Complete legal file</li>
+</ul>
+<button class="w-full py-3 border-2 border-primary text-primary rounded-xl font-label-md hover:bg-primary/5">Consult Case</button>
+</div>
+<!-- Pricing Card 4 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-shadow flex flex-col">
+<h3 class="font-label-md text-secondary mb-2 uppercase">Other Services</h3>
+<div class="text-3xl font-bold mb-4">Custom Quote</div>
+<ul class="font-body-md text-on-surface-variant space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> PESEL assignments</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Business registrations</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Appeals &amp; defenses</li>
+</ul>
+<button class="w-full py-3 border-2 border-primary text-primary rounded-xl font-label-md hover:bg-primary/5">Inquire Now</button>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-md hover:brightness-110 transition-all card-shadow">Book a consultation for a detailed quote</button>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-6">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">translate</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Multilingual</h3>
+<p class="font-body-md text-on-surface-variant">We speak your language to ensure clarity and comfort at every step.</p>
+</div>
+<div class="p-6">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">location_on</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Warsaw-based</h3>
+<p class="font-body-md text-on-surface-variant">Our office is located in the heart of Poland's legal and administrative hub.</p>
+</div>
+<div class="p-6">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">support_agent</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Unlimited Support</h3>
+<p class="font-body-md text-on-surface-variant">Ongoing consultations for active clients without extra hidden costs.</p>
+</div>
+<div class="p-6">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">payments</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mb-2">Instalments</h3>
+<p class="font-body-md text-on-surface-variant">Flexible payment plans to help manage your financial commitments.</p>
+</div>
+</div>
+</section>
+<!-- Blog -->
+<section class="bg-tertiary-container/5 py-section-padding-mobile md:py-section-padding-desktop" id="blog">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Legal Insights</h2>
+<p class="font-body-md text-on-surface-variant">Stay updated with the latest changes in Polish immigration law.</p>
+</div>
+<a class="text-link-blue font-label-md hidden md:flex items-center gap-1 hover:underline" href="#">Read all articles →</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/30 card-shadow group">
+<div class="aspect-video relative overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="A clean, minimalist desk with a legal document, a high-end pen, and a laptop. The lighting is soft and bright, using the light mode aesthetic. A cool blue color palette is integrated into the workspace accessories, creating a professional and focused environment suitable for a blog post about legal procedures in Poland." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeHT-nRb23ACDS2j0UD0_UZDGRFeLhQEP7z8kZkfMhgTQq45wvCdDauxtaSWqxhTNGNxjnBvuh7tCqMvLKXALT6oQia_t4LhNgD5FJYsh46gcwSgZ0AvPXp4c-80tt3hHjWYaSe1SKhEvsWA6ZeW10DM4THxmY9ObasxxncxN4LdaUuXRcuJU_OEgkJcO_f5gr8BlFk6ohvr9cJBlgpnCVvPJtyKwvsW9_0Dbg-D64m_SGuuCk_i9UjauriRwv5gAU6sO2VqHsuF8"/>
+</div>
+<div class="p-6">
+<span class="font-caption text-secondary">May 2026</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mt-2 mb-4 group-hover:text-primary transition-colors">New Regulations for Work Permit Extensions</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-6 line-clamp-3">A detailed analysis of the recent changes affecting non-EU workers and their path to residency in Poland.</p>
+<a class="text-link-blue font-label-md hover:underline" href="#">Read Article</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/30 card-shadow group">
+<div class="aspect-video relative overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="An architectural detail of a modern Polish office building under a clear blue sky. The geometric patterns of the glass and steel reflect a sense of progress and stability. The overall image has a subtle blue tint and high-key lighting, maintaining the clean, minimalist brand aesthetic of the immigration law practice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAls2x3h-wsi8F1p4Ul3_DofzOx3InjPSKjxmDuYO5qJ-9xnCXM0UAjzIZrRQJ7gujZU7shFrAV_QfHHn1ZMbNRXKAnQlcxMCnnYc4hpTJh63mzcGaxOYNWyua5KbWB7lyXtsoxgsi0x25_FmhBFPLnqxDsTd2oUnLk1l6KYK0vXRb8f0xz63w4KCfFyVqJx6q9UfHLPs4YSLmby9z4KGud4p6fTraGdbd1-qRlF0g37VlkXIULoDYvx8wyZTDIvGI7AzaEWyRWc3c"/>
+</div>
+<div class="p-6">
+<span class="font-caption text-secondary">April 2026</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mt-2 mb-4 group-hover:text-primary transition-colors">Navigating the EU Blue Card Path</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-6 line-clamp-3">How highly skilled professionals can leverage the EU Blue Card for faster permanent residency and family mobility.</p>
+<a class="text-link-blue font-label-md hover:underline" href="#">Read Article</a>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-white rounded-2xl overflow-hidden border border-outline-variant/30 card-shadow group">
+<div class="aspect-video relative overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="A handshake between two professionals in a light-filled boardroom, symbolizing a successful partnership. The background is clean and airy, with soft blue and white tones that match the law firm's corporate identity. The focus is on the professionalism and trust established through legal representation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIMXPPTOYfGe6Trr_eHgib_VmOfeCBeTccgDCSYp48NNKZdc2JoQcEKspY8PDx4f-GKCDeqdJiBhplTiCJTuk_XQO52cXOYiotPCkP3Ums1AbPTuGpBRlGNZ0BOrUy7K3PY1SVq36HXMfsV7wRljTFuTxvL7J6L7oWBrvpj3kHHpdhruWEB7qCR5yC2YB-hNrtcx_42X69rWUTiXAEA63utt9YBRi4gnQAaV-vVYQ7WXCenY6LGr24W_pIAYnamd4M-JpU5KVFMuU"/>
+</div>
+<div class="p-6">
+<span class="font-caption text-secondary">June 2024</span>
+<h3 class="font-headline-md text-headline-md text-body-md font-bold mt-2 mb-4 group-hover:text-primary transition-colors">Your First PESEL: A Step-by-Step Guide</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-6 line-clamp-3">Everything you need to know about obtaining your first national identification number as a foreigner in Poland.</p>
+<a class="text-link-blue font-label-md hover:underline" href="#">Read Article</a>
+</div>
+</article>
+</div>
+<div class="mt-8 md:hidden text-center">
+<a class="text-link-blue font-label-md hover:underline" href="#">Read all articles →</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-6">Get in Touch</h2>
+<p class="font-body-md text-on-surface-variant mb-12">Ready to start your journey? Send us a message or visit our office in Warsaw.</p>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary">Office Address</h4>
+<p class="font-body-md text-on-surface-variant">Fryderyka Chopina 7/68, 00-559 Warsaw, Poland</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">call</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary">Phone Number</h4>
+<p class="font-body-md text-on-surface-variant">+48 798 107 769</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary">Email Support</h4>
+<p class="font-body-md text-on-surface-variant">office@t-immigration.com</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary">Working Hours</h4>
+<p class="font-body-md text-on-surface-variant">Mon–Thu 9:00–17:00, Fri 9:00–15:00, Sat 10:00–15:00</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 md:p-12 rounded-3xl border border-outline-variant/30 card-shadow">
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-sm">First Name</label>
+<input class="w-full rounded-lg border-outline-variant focus:border-primary focus:ring-primary transition-all p-3" placeholder="Anna" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-sm">Last Name</label>
+<input class="w-full rounded-lg border-outline-variant focus:border-primary focus:ring-primary transition-all p-3" placeholder="Kowalska" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-sm">Email Address</label>
+<input class="w-full rounded-lg border-outline-variant focus:border-primary focus:ring-primary transition-all p-3" placeholder="anna@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-sm">Message</label>
+<textarea class="w-full rounded-lg border-outline-variant focus:border-primary focus:ring-primary transition-all p-3" placeholder="How can we help you today?" rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-xl font-label-md hover:brightness-110 active:scale-[0.98] transition-all">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary py-section-padding-mobile md:py-section-padding-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-secondary mb-6">Anna Trylińska</div>
+<p class="font-body-md text-on-secondary/80 text-sm leading-relaxed mb-6">Providing high-end immigration legal services in Warsaw, Poland. Empowering individuals and businesses through expert representation.</p>
+<div class="flex gap-4">
+<a class="text-on-secondary hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-secondary hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+<a class="text-on-secondary hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary font-bold mb-6">Services</h4>
+<ul class="space-y-3 font-body-md text-on-secondary/80">
+<li><a class="hover:text-white transition-colors" href="#">Work Residence</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Family Reunification</a></li>
+<li><a class="hover:text-white transition-colors" href="#">EU Blue Card</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Citizenship</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary font-bold mb-6">Company</h4>
+<ul class="space-y-3 font-body-md text-on-secondary/80">
+<li><a class="hover:text-white transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#team">The Team</a></li>
+<li><a class="hover:text-white transition-colors" href="#pricing">Pricing</a></li>
+<li><a class="hover:text-white transition-colors" href="#blog">Legal Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary font-bold mb-6">Legal</h4>
+<ul class="space-y-3 font-body-md text-on-secondary/80">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Legal Notice</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-body-md text-on-secondary/60 text-sm">
+                © 2026 Anna Trylińska Immigration Law Poland. All rights reserved.
+            </div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-green-400"></div>
+<span class="font-label-md text-on-secondary/80 text-xs">Available for Consultations</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        btn.addEventListener('click', () => {
+            // For a production site, we'd add a real mobile menu here.
+            // For this design, we'll log it or add a simple alert.
+            console.log('Mobile menu clicked');
+        });
+
+        // Add smooth scroll behavior for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Small atmospheric interaction: brighten cards on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
